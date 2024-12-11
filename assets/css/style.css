@@ -1,0 +1,30 @@
+/* Navbar-Started */
+.navbar {
+    background-color: #D0AC60; 
+  }
+  .navbar-brand img {
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #555;
+  }
+  .btn-appointment {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 9px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .btn-appointment:hover {
+    background-color: #555;
+    color: white;
+  }
+  /* Navbar-Ended */
