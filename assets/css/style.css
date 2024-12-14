@@ -1,10 +1,15 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 /* Navbar-Started */
 .navbar {
     background-color: #D0AC60; 
   }
   .navbar-brand img {
     width: 40px;
-    height: 45px;
+    height: 40px;
     border-radius: 50%;
   }
   .navbar-nav .nav-link {
@@ -28,3 +33,85 @@
     color: white;
   }
   /* Navbar-Ended */
+  /* Maincontent-started */
+  .fullscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden; /* Prevent any unwanted overflow */
+}
+.fullscreen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the full area without whitespace */
+}
+  /* Main-content-Ended *
+
+/* Ourservice-started */
+.service-card {
+  background-color: #f5c57a;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+  height: 450px;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.service-image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  padding-top: 20px;
+  width: 100%; /* Full width of container */
+}
+
+.service-image {
+  max-width: 100%; /* Image takes up 70% of container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+.service-content {
+  padding: 15px;
+}
+.service-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #d44500;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  margin-top: 10px; /* Add spacing */
+}
+
+.read-more {
+  color: #d44500;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex; /* To align text and arrow properly */
+  align-items: center;
+}
+
+.right-arrow {
+  margin-left: 5px; /* Add spacing between text and arrow */
+  font-size: 1rem;
+}
+
+.read-more:hover {
+  color: #ff6600; /* Hover effect */
+}
+/* Ourservice-Ended */
