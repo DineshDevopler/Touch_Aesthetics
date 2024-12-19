@@ -149,33 +149,69 @@ body, html {
 /* Why chooseus-Ended */
 
 /* CLientDiaries-started */
-.carousel-inner {
+ /* Card Container */
+ .card-container {
   display: flex;
+  gap: 20px;
+  animation: slideCards 10s linear infinite; /* Animation applied */
+  width: calc(300px * 6); /* Adjust for smooth animation loop */
 }
-.carousel-items {
-  flex: 0 0 auto;
-  transition: transform 0.5s ease;
-}
-.card {
+
+.card-wrapper {
   width: 100%;
-  margin: 15px;
+  overflow: hidden;
 }
-.star-rating {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+
+/* Individual Card */
+.client-card {
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0; /* Prevents cards from shrinking */
 }
-.star-rating input[type="radio"] {
+
+.client-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.client-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: gold;
+}
+
+/* Animation Keyframes */
+@keyframes slideCards {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Duplicate cards for seamless loop */
+.card-container .client-card:nth-child(n+4) {
   display: none;
 }
-.star-rating label {
-  font-size: 1.5rem;
-  color: #ddd;
-  cursor: pointer;
+
+@media (max-width: 576px) {
+  .container{
+padding: left 5%;
+
 }
-.star-rating input[type="radio"]:checked ~ label,
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: #f5c518;
-}
-/* ClientDiaries-Ended */
+}/* ClientDiaries-Ended */
