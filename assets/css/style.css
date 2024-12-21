@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Lora-regular';
 }
 /* Navbar-Started */
 .navbar {
@@ -18,7 +19,7 @@ body, html {
     transition: color 0.3s;
   }
   .navbar-nav .nav-link:hover {
-    color: #555;
+    color:black;
     text-decoration: underline;
 
   }
@@ -31,7 +32,7 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
   }
   .btn-appointment:hover {
-    background-color: #555;
+    background-color:black;
     color: white;
     text-decoration: underline;
   }
@@ -49,6 +50,7 @@ body, html {
       width: 100%;
       height: 100%;
     }
+ 
   /* Main-content-Ended *
 
 /* Ourservice-started */
@@ -82,16 +84,17 @@ body, html {
   padding: 15px;
 }
 .service-title {
-  font-size: 1.25rem;
+  font-size: 23px;
   font-weight: bold;
   color: #AB2727;
   margin-bottom: 10px;
 }
 
 .service-description {
-  font-size: 0.95rem;
+  font-size: 16px;
   color: #000000;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .read-more-container {
@@ -132,11 +135,13 @@ body, html {
   text-align: center;
 }
 .clinic-card h5 {
-  color: #ffd700;
+  color: #F0C886;
   font-weight: bold;
+  font-size: 23px;
 }
 .clinic-card p{
   color: white;
+  font-size: 17px;
 }
 .clinic-image img {
   max-width: 100%;
@@ -150,68 +155,98 @@ body, html {
 
 /* CLientDiaries-started */
  /* Card Container */
- .card-container {
-  display: flex;
-  gap: 20px;
-  animation: slideCards 10s linear infinite; /* Animation applied */
-  width: calc(300px * 6); /* Adjust for smooth animation loop */
-}
-
-.card-wrapper {
+ .card-wrapper {
   width: 100%;
   overflow: hidden;
+  padding: 20px 0;
 }
 
-/* Individual Card */
+.card-container {
+  display: flex;
+  gap: 20px;
+  animation: slideCards 10s linear infinite;
+}
+
 .client-card {
+  position: relative; /* Ensures proper positioning of content */
   background: #000;
   color: #fff;
   border-radius: 10px;
-  text-align: center;
   padding: 20px;
-  width: 300px;
+  width: 400px; /* Adjust card width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  flex-shrink: 0; /* Prevents cards from shrinking */
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wraps content around the image */
+  align-items: flex-start; /* Aligns image to the top */
 }
 
-.client-card img {
+.client-img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-right: 35px; /* Space between image and content */
+  flex-shrink: 0; /* Prevents image from shrinking */
 }
 
-.stars {
-  color: gold;
-  font-size: 20px;
-  margin: 10px 0;
+.client-content {
+  flex: 1; /* Ensures the content takes the remaining space */
+  text-align: left;
 }
 
 .client-name {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
-  color: gold;
+  color:#F0C886;
+  margin-bottom: 0px;
+}
+
+.stars {
+  color:#F0C886;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.client-card p {
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 /* Animation Keyframes */
 @keyframes slideCards {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(calc(-400px * 3)); /* Adjust for visible card width */
   }
 }
 
-/* Duplicate cards for seamless loop */
-.card-container .client-card:nth-child(n+4) {
-  display: none;
-}
-
+/* Responsive Design */
 @media (max-width: 576px) {
-  .container{
-padding: left 5%;
+  .client-card {
+    width: 100%;
+    flex-direction: column; /* Stack image and content vertically */
+  }
 
+  .client-img {
+    margin: 0 auto 10px;
+  }
+
+  .client-content {
+    text-align: center;
+  }
 }
-}/* ClientDiaries-Ended */
+@media (max-width: 800px) {
+  .carousel-item img {
+    height: 100%; /* Adjust height to 60% of the viewport for smaller screens */
+  }
+}
+
+/* Media Query for screens below 576px (extra small devices) */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 100%; /* Further reduce the height for extra small devices */
+  }
+}
