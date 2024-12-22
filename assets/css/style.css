@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Lora-regular';
+  font-family: 'Lora-regular', serif;
 }
 /* Navbar-Started */
 .navbar {
@@ -11,7 +11,6 @@ body, html {
   .navbar-brand img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
   }
   .navbar-nav .nav-link {
     color: black;
