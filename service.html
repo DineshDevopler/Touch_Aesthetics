@@ -1,241 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/service.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="./assets/css/service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+   
+    </style>
 </head>
 <body>
-<!-----------------Navbar-started----------->
+     <!-----------------Navbar-started----------->
 <nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="assets/images/logo.jpg" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.jpg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#about">Home</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About us</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./aboutus.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./service.html">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-appointment" href="#appointment" style=" font-family: 'Lora-regular', serif;">Book an Appointment</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-appointment" href="#appointment" style=" font-family: 'Lora-regular', serif;">Book an Appointment</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-----------------Navbar-Ended----------->
+  <!----------------main Content-Started------->
+  <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/mainimg.png" alt="First Slide">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/mainimg2.png" alt="Second Slide">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/mainimg3.png" alt="Third Slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</nav>
-<!-----------------Navbar-Ended----------->
-<!----------------main Content-Started------->
-<div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/images/mainimg.png" alt="First Slide">
+    
+  <!----------------main Content-Ended------->
+    <div class="container">
+        <h1 class="text-center my-3" style="font-family:'Lora-regular', serif;">Our Services</h1>
+        
+        <!-- First Row -->
+        <div class="row service-container">
+            <div class="col-md-6">
+                <img src="./assets/images/card 1.png" alt="Service 1" class="service-img">
+            </div>
+            <div class="col-md-6">
+                <div class="service-content">
+                    <h2>Acne & Acne Scar Treatment</h2>
+                    <p>Acne and acne scars can affect your skin’s appearance and your confidence. Our specialized treatment focuses on clearing active acne, minimizing scars, and improving your skin’s overall texture and tone.
+
+                        We offer personalized solutions like laser therapy, chemical peels, microneedling, and advanced skincare products to address your unique needs. These treatments promote collagen production, reduce discoloration, and smooth the skin for long-lasting results.
+                        
+                        Say goodbye to stubborn acne and scars—embrace clearer, healthier skin with our expert care! </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row service-container">
+            <div class="col-md-6 order-md-2">
+                <img src="./assets/images/card2.png" alt="Service 2" class="service-img">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="service-content">
+                    <h2>Anti-Aging Treatments</h2>
+                    <p>Acne and acne scars can significantly affect one’s confidence, but effective treatments are available. For active acne, topical treatments like retinoids, benzoyl peroxide, and salicylic acid reduce inflammation and unclog pores.For acne scars, treatment depends on the type of scarring. Non-invasive options like chemical peels, microneedling, and laser therapy improve skin texture and tone by promoting collagen production.</p>
+                </div>
+            </div>
+        </div>
+
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card3.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Pigmentation Correction</h2>
+                <p>Topical Treatments include brightening agents like Vitamin C, niacinamide, and kojic acid, which inhibit melanin production. Retinoids accelerate cell turnover, while sunscreens with broad-spectrum SPF prevent further pigmentation.Pigmentation correction focuses on reducing dark spots, melasma, and uneven skin tone caused by sun exposure, hormonal changes, or acne scars. Effective treatments combine professional procedures and targeted skincare to restore a radiant complexion.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="assets/images/mainimg2.png" alt="Second Slide">
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card4.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>Scar Treatment</h2>
+                <p>Scar treatment aims to improve the appearance of scars caused by injuries, surgeries, or conditions like acne. The choice of treatment depends on the type of scar, such as atrophic (indented), hypertrophic (raised), or keloid scars.Topical Treatments like silicone gels or sheets help flatten raised scars and improve texture. Brightening agents such as Vitamin C and niacinamide target discoloration. Over-the-counter creams with retinoids can also enhance skin renewal.</p>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="assets/images/mainimg3.png" alt="Third Slide">
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card5.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Sensitive Skin Care</h2>
+                <p>Caring for sensitive skin requires a gentle and mindful approach to avoid irritation. Use a mild, fragrance-free cleanser and wash with lukewarm water to protect your skin's natural barrier.Always apply moisturizer after cleansing to lock in hydration.Protect your skin from the sun with mineral sunscreen containing zinc oxide or titanium dioxide, and wear protective clothing when outdoors. </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card6.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>Chemical Peels</h2>
+                <p>Chemical peels are skin-resurfacing treatments that use chemical solutions to remove the top layers of the skin, revealing a smoother, more radiant complexion.Peels are categorized into three types: superficial, medium, and deep, depending on the intensity and depth of treatment. Superficial peels use mild acids like alpha-hydroxy acids (AHAs) to gently exfoliate the outer layer.A chemical peel is a non-invasive skincare treatment that uses a chemical solution to exfoliate and remove damaged skin cells from the surface, revealing healthier, smoother skin underneath. This treatment can help with a variety of skin concerns, including acne, acne scars, hyperpigmentation, and uneven texture.</p>
+            </div>
+        </div>
+    </div>
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card7.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Microneedling</h2>
+                <p>Microneedling is a minimally invasive cosmetic procedure that stimulates skin regeneration by creating tiny, controlled micro-injuries on the skin's surface using fine needles.The treatment is widely used to address concerns such as acne scars, fine lines, wrinkles, enlarged pores, and uneven skin tone.Microneedling is a minimally invasive procedure that involves using tiny, fine needles to create micro-injuries in the skin's surface. These controlled injuries trigger the body’s natural healing process, stimulating collagen and elastin production, which helps improve skin texture, tone, and overall appearance. .</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card8.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>IV Glutathione for Skin Lightening</h2>
+                <p>IV glutathione is a popular treatment for skin lightening and brightening. Glutathione, a powerful antioxidant naturally present in the body, plays a key role in reducing oxidative stress.Administered intravenously, this method allows glutathione to enter the bloodstream directly, ensuring better absorption compared to oral supplements.</p>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card9.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Hair Loss Solutions</h2>
+                <p>Hair loss affects many individuals and can result from factors like genetics, hormonal changes, stress, or medical conditions. A range of treatments is available to address hair loss, depending on its cause and severity.Medications like minoxidil (a topical solution) and finasteride (an oral pill) are FDA-approved and widely used to promote hair regrowth and prevent further loss. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card10.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>Hair Restoration</h2>
+                <p>Hair restoration treatments offer solutions for individuals experiencing hair thinning or loss due to genetics, aging, stress, or medical conditions.Medications like minoxidil and finasteride are FDA-approved for promoting hair growth and reducing hair loss.
+                    Hair restoration is a medical procedure designed to treat hair loss and promote hair regrowth. It involves various methods, including non-surgical treatments and surgical options, to help restore natural hair growth, improve density, and enhance overall hair appearance. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card11.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Scalp Treatments</h2>
+                <p>Scalp treatments are essential for maintaining a healthy foundation for hair growth and addressing issues like dryness, dandruff, itchiness, and excessive oil production. Treatments may include deep cleansing to remove buildup, exfoliation to eliminate dead skin cells, and hydration therapies to restore moisture balance. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card12.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>Hair Rejuvenation</h2>
+                <p>Hair rejuvenation refers to a range of treatments designed to restore the health and appearance of hair that is thinning, damaged, or showing signs of aging. Treatments may include deep cleansing to remove buildup, exfoliation to eliminate dead skin cells, and hydration therapies to restore moisture balance. One common method is Platelet-Rich Plasma (PRP) therapy, where a patient’s own blood is processed and injected into the scalp to promote natural hair regeneration.</p>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- First Row -->
+       <div class="row service-container">
+        <div class="col-md-6">
+            <img src="./assets/images/card13.png" alt="Service 1" class="service-img">
+        </div>
+        <div class="col-md-6">
+            <div class="service-content">
+                <h2>Laser & Aesthetic Procedure</h2>
+                <p>Laser and aesthetic procedures have become popular for enhancing skin, hair, and overall appearance without the need for invasive surgeryLaser hair removal is one of the most common aesthetic treatments, using concentrated light to target and permanently reduce unwanted hair.Laser and aesthetic procedures are non-invasive or minimally invasive treatments designed to address a variety of skin concerns, enhance appearance, and promote skin health. These treatments use advanced technology to provide targeted solutions for issues like aging, acne, pigmentation, and body contouring.  </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row service-container">
+        <div class="col-md-6 order-md-2">
+            <img src="./assets/images/card14.png" alt="Service 2" class="service-img">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="service-content">
+                <h2>Laser Hair Removal</h2>
+                <p>Laser hair removal is a popular, non-invasive procedure designed to permanently reduce unwanted hair. It uses concentrated light to target and destroy hair follicles, preventing future hair growth.This method is suitable for many areas of the body, including the face, legs, arms, underarms, and bikini line. It works best on individuals with fair skin and dark hair, as the contrast allows the laser to effectively target the hair pigment.  
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-  
-<!----------------main Content-Ended------->
-<!-- our service started -->
-<div class="service-title">
-  <h2>Our Services</h2>
-</div>
-  <section class="services-section">
-    <!-- Acne & Acne Scar Treatment -->
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card 1.png" alt="Service 1">
-      </div>
-      <div class="service-content">
-        <h2>Acne & Acne Scar Treatment</h2>
-        <p>
-          Acne and acne scars can significantly affect one’s confidence, but effective treatments are available. For active acne, topical treatments like retinoids, benzoyl peroxide, and salicylic acid reduce inflammation and unclog pores. 
-        </p>
-      </div>
+  <!-- Footer part started -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                   
+                </ul>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Services Part 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Acne & Acne Scar Treatment</a></li>
+                    <li><a href="#">Anti-Aging Treatments</a></li>
+                    <li><a href="#">Pigmentation Correction</a></li>
+                    <li><a href="#">IV Glutathione for Skin Lightening</a></li>
+                    <li><a href="#">Scar treatment</a></li>
+                    <li><a href="#">Sensitive Skin Care</a></li>
+                    <li><a href="#">Chemical Peels</a></li>
+                    <li><a href="#">Microneedling</a></li>
+                </ul>
+            </div>
+            <!-- Services Part 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Additional Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Hair Loss Solutions</a></li>
+                    <li><a href="">Hair Restoration</a></li>
+                    <li><a href="">Scalp Treatments</a></li>
+                    <li><a href="">Hair Rejuvenation</a></li>
+                    <li><a href="">Laser & Aesthetic Procedure</a></li>
+                    <li><a href="">Laser Hair Removal</a></li>
+                </ul>
+            </div>
+            <!-- Map and Contact Details -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Contact Us</h5>
+                <address style="line-height:0.9;">
+                  <p>3rd Floor Kovai Tower Balasundaram Road</p>
+                  <p>PN Palayam Road,TamilNadu-641018</p>
+                  <p>Phone: +91 6380454954</p>
+                  <p>Email: <a href="mailto:Touchaestheticclinic@gmail.com">Touchaestheticclinic@gmail.com</a></p>
+              </address>
+             
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62661.21571059333!2d76.90479040145873!3d11.014150513500528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b2b386aaab%3A0x99b91addb5272176!2sKovai%20Tower!5e0!3m2!1sen!2sin!4v1734850823606!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div>
+        </div>
     </div>
-<!-- Anti-aging Treatments -->
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card2.png" alt="Service 2">
-      </div>
-      <div class="service-content">
-        <h2>Anti-Aging Treatments</h2>
-        <p>
-          Acne and acne scars can significantly affect one’s confidence, but effective treatments are available. For active acne, topical treatments like retinoids, benzoyl peroxide, and salicylic acid reduce inflammation and unclog pores.
-          For acne scars, treatment depends on the type of scarring. Non-invasive options like chemical peels, microneedling, and laser therapy improve skin texture and tone by promoting collagen production. 
-        </p>
-      </div>
-    </div>
-<!-- Pigmentation Corrections -->
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card3.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Pigmentation Correction</h2>
-        <p>
-          Topical Treatments include brightening agents like Vitamin C, niacinamide, and kojic acid, which inhibit melanin production. Retinoids accelerate cell turnover, while sunscreens with broad-spectrum SPF prevent further pigmentation.
-          Pigmentation correction focuses on reducing dark spots, melasma, and uneven skin tone caused by sun exposure, hormonal changes, or acne scars. Effective treatments combine professional procedures and targeted skincare to restore a radiant complexion.
-        </p>
-      </div>
-    </div>
-    <!-- Scar Treatment -->
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card4.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Scar treatment </h2>
-        <p>
-          Scar treatment aims to improve the appearance of scars caused by injuries, surgeries, or conditions like acne. The choice of treatment depends on the type of scar, such as atrophic (indented), hypertrophic (raised), or keloid scars.Topical Treatments like silicone gels or sheets help flatten raised scars and improve texture. Brightening agents such as Vitamin C and niacinamide target discoloration. Over-the-counter creams with retinoids can also enhance skin renewal.
-        </p>
-      </div>
-    </div>
+</footer>
 
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card5.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Sensitive Skin Care</h2>
-        <p>
-          Caring for sensitive skin requires a gentle and mindful approach to avoid irritation. Use a mild, fragrance-free cleanser and wash with lukewarm water to protect your skin's natural barrier.Always apply moisturizer after cleansing to lock in hydration.
-          Protect your skin from the sun with mineral sunscreen containing zinc oxide or titanium dioxide, and wear protective clothing when outdoors. 
-        </p>
-      </div>
-    </div>
+    <script>
+        // Select all service-content elements
+        const serviceContents = document.querySelectorAll('.service-content');
 
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card6.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Chemical Peels</h2>
-        <p>
-          Chemical peels are skin-resurfacing treatments that use chemical solutions to remove the top layers of the skin, revealing a smoother, more radiant complexion.Peels are categorized into three types: superficial, medium, and deep, depending on the intensity and depth of treatment. Superficial peels use mild acids like alpha-hydroxy acids (AHAs) to gently exfoliate the outer layer
-        </p>
-      </div>
-    </div>
+        // Add mouseover and mouseout events to add/remove the 'active' class
+        serviceContents.forEach(content => {
+            content.addEventListener('mouseover', () => {
+                content.classList.add('active');
+            });
+            content.addEventListener('mouseout', () => {
+                content.classList.remove('active');
+            });
+        });
+    </script>
 
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card7.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Microneedling</h2>
-        <p>
-          Microneedling is a minimally invasive cosmetic procedure that stimulates skin regeneration by creating tiny, controlled micro-injuries on the skin's surface using fine needles.Microneedling is a minimally invasive cosmetic procedure that stimulates skin regeneration by creating tiny, controlled micro-injuries on the skin's surface using fine needles. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card8.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>IV Glutathione for Skin Lightening</h2>
-        <p>
-          IV glutathione is a popular treatment for skin lightening and brightening. Glutathione, a powerful antioxidant naturally present in the body, plays a key role in reducing oxidative stress.Administered intravenously, this method allows glutathione to enter the bloodstream directly, ensuring better absorption compared to oral supplements. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card9.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Hair Loss Solutions</h2>
-        <p>Hair loss affects many individuals and can result from factors like genetics, hormonal changes, stress, or medical conditions. A range of treatments is available to address hair loss, depending on its cause and severity.Medications like minoxidil (a topical solution) and finasteride (an oral pill) are FDA-approved and widely used to promote hair regrowth and prevent further loss. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card10.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Hair Restoration</h2>
-        <p>Hair restoration treatments offer solutions for individuals experiencing hair thinning or loss due to genetics, aging, stress, or medical conditions.Medications like minoxidil and finasteride are FDA-approved for promoting hair growth and reducing hair loss. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card11.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Scalp Treatments</h2>
-        <p>Scalp treatments are essential for maintaining a healthy foundation for hair growth and addressing issues like dryness, dandruff, itchiness, and excessive oil production. Treatments may include deep cleansing to remove buildup, exfoliation to eliminate dead skin cells, and hydration therapies to restore moisture balance.  
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card12.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Hair Rejuvenation</h2>
-        <p>Hair rejuvenation refers to a range of treatments designed to restore the health and appearance of hair that is thinning, damaged, or showing signs of aging.One common method is Platelet-Rich Plasma (PRP) therapy, where a patient’s own blood is processed and injected into the scalp to promote natural hair regeneration. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card13.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Laser & Aesthetic Procedure</h2>
-        <p>Laser and aesthetic procedures have become popular for enhancing skin, hair, and overall appearance without the need for invasive surgery.Laser hair removal is one of the most common aesthetic treatments, using concentrated light to target and permanently reduce unwanted hair. 
-        </p>
-      </div>
-    </div>
-
-    <div class="service-container">
-      <div class="service-image">
-        <img src="./assets/images/card14.png" alt="Service 3">
-      </div>
-      <div class="service-content">
-        <h2>Laser Hair Removal</h2>
-        <p>Laser hair removal is a popular, non-invasive procedure designed to permanently reduce unwanted hair. It uses concentrated light to target and destroy hair follicles, preventing future hair growth.This method is suitable for many areas of the body, including the face, legs, arms, underarms, and bikini line. It works best on individuals with fair skin and dark hair, as the contrast allows the laser to effectively target the hair pigment. 
-
-        </p>
-      </div>
-    </div>
-
-  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
