@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Touch_Aesthetics</title>
   <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -16,29 +17,35 @@
     <a class="navbar-brand" href="#">
       <img src="assets/images/logo.png" alt="Logo" style="width: 100px; height: 30px;">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <img src="assets/images/logo.png" alt="Logo" style="width: 100px; height: 30px;">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"  style=" margin-top: 4px; ">Home</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="service.html">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a id="bookAppointment" class="btn btn-appointment" href="javascript:void(0);" style="font-family: 'Lora-regular', serif;">
-            Book an Appointment
-          </a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"  style=" margin-top: 4px; ">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html"  style="margin-top: 4px; ">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"  style="margin-top: 4px; ">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a id="bookAppointment" class="btn btn-appointment" href="javascript:void(0);" style="font-family: 'Lora-regular', serif; margin-top: 4px; ">
+              Book an Appointment
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -48,13 +55,26 @@
 <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/images/mainimg.png" alt="First Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg1.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg1.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg1.jpg" alt="Responsive Image">
+    </picture>
+    
     </div>
     <div class="carousel-item">
-      <img src="assets/images/mainimg2.png" alt="Second Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg2.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg2.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg2.jpg" alt="Responsive Image">
+    </picture>
     </div>
     <div class="carousel-item">
-      <img src="assets/images/mainimg3.png" alt="Third Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg3.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg3.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg3.jpg" alt="Responsive Image">
+    </picture>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
@@ -86,7 +106,7 @@
                     Sensitive Skin Care focuses on gentle treatments designed to soothe and protect delicate skin. 
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -104,7 +124,7 @@
                   Reduce wrinkles and fine lines with non-invasive procedures like Botox, fillers, and laser treatments. 
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -123,7 +143,7 @@
                   Whether it's sunspots, melasma, or discolorations, our treatments give you an even complexion.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html?service=3" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -141,7 +161,7 @@
                   Heal acne scars, surgical scars, and skin imperfections with specialized treatments.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -159,7 +179,7 @@
                   ailored treatments for eczema, rosacea, or other skin sensitivities.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -177,7 +197,7 @@
                   A safe way to improve the appearance of your skin, treat sun damage, acne scars, and fine lines.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -195,7 +215,7 @@
                   Boost collagen production, reducing scars and fine lines for smoother skin.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -214,7 +234,7 @@
                   righten skin and reduce pigmentation caused by UV exposure.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -232,7 +252,7 @@
                   PRP and GFC treatments for effective hair loss solutions for men and women.
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -250,7 +270,7 @@
                   From non-surgical options to advanced hair transformation we focus on regrowing and revitalizing
                 </div>
                 <div class="read-more-container">
-                  <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                  <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
               </div>
             </div>
         </div>
@@ -268,7 +288,7 @@
                 Address issue like dandruff, dry scalp, or oily scalp with our targeted treatments.
               </div>
               <div class="read-more-container">
-                <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
             </div>
           </div>
       </div>
@@ -286,7 +306,7 @@
                 Reduce wrinkless and fine lines with non-invasive procedures like Botox, filters and laser treatments.
               </div>
               <div class="read-more-container">
-                <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
             </div>
           </div>
       </div>
@@ -304,7 +324,7 @@
                 Reduce wrinkless and fine lines with non-invasive procedures like Botox, filters and laser treatments.
               </div>
               <div class="read-more-container">
-                <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
             </div>
           </div>
       </div>
@@ -322,7 +342,7 @@
                 Reduce wrinkless and fine lines with non-invasive procedures like Botox, filters and laser treatments.
               </div>
               <div class="read-more-container">
-                <a href="empty.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
+                <a href="service.html" class="read-more">Read more <span class="right-arrow">&rarr;</span></a>
             </div>
           </div>
       </div>
@@ -438,7 +458,69 @@
 </div>
 </div>
 
-
+ <!-- Footer part started -->
+ <footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Quick Links -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                 
+              </ul>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <!-- Services Part 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Services</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Acne & Acne Scar Treatment</a></li>
+                  <li><a href="#">Anti-Aging Treatments</a></li>
+                  <li><a href="#">Pigmentation Correction</a></li>
+                  <li><a href="#">IV Glutathione for Skin Lightening</a></li>
+                  <li><a href="#">Scar treatment</a></li>
+                  <li><a href="#">Sensitive Skin Care</a></li>
+                  <li><a href="#">Chemical Peels</a></li>
+                  <li><a href="#">Microneedling</a></li>
+              </ul>
+          </div>
+          <!-- Services Part 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Additional Services</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Hair Loss Solutions</a></li>
+                  <li><a href="">Hair Restoration</a></li>
+                  <li><a href="">Scalp Treatments</a></li>
+                  <li><a href="">Hair Rejuvenation</a></li>
+                  <li><a href="">Laser & Aesthetic Procedure</a></li>
+                  <li><a href="">Laser Hair Removal</a></li>
+              </ul>
+          </div>
+          <!-- Map and Contact Details -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Contact Us</h5>
+              <address style="line-height:0.9;">
+                <p>3rd Floor Kovai Tower Balasundaram Road</p>
+                <p>PN Palayam Road,TamilNadu-641018</p>
+                <p>Phone: +91 6380454954</p>
+                <p>Email: <a href="mailto:Touchaestheticclinic@gmail.com">Touchaestheticclinic@gmail.com</a></p>
+            </address>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62661.21571059333!2d76.90479040145873!3d11.014150513500528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b2b386aaab%3A0x99b91addb5272176!2sKovai%20Tower!5e0!3m2!1sen!2sin!4v1734850823606!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+      </div>
+  </div>
+</footer>
 
 <script>
   document.getElementById('bookAppointment').addEventListener('click', function () {
