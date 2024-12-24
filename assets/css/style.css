@@ -54,7 +54,7 @@ body, html {
 /* Ourservice-started */
 .service-card {
   background-color: #F0C886;
-  border-radius: 8px;
+  border-radius: 5px;   
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 15px 0;
@@ -69,7 +69,7 @@ body, html {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically if needed */
-  padding-top: 20px;
+padding: 12px;
   width: 100%; /* Full width of container */
 }
 
