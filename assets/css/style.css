@@ -64,7 +64,7 @@ body, html {
 /* Ourservice-started */
 .service-card {
   background-color: #F0C886;
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 15px 0;
@@ -79,7 +79,7 @@ body, html {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically if needed */
-  padding-top: 20px;
+padding: 12px;
   width: 100%; /* Full width of container */
 }
 
@@ -329,38 +329,39 @@ body, html {
 
    /* nev  */
    /* Center-align offcanvas content */
-.offcanvas-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8f9fa; /* Background color for the offcanvas */
-  height: 100%;
-  width: 100%;
-  left: 0 !important; /* Ensure it covers the full screen width */
-  right: 0 !important;
-  top: 0 !important;
-}
-
-.offcanvas .offcanvas-title {
-  font-family: 'Lora-regular', serif;
-  font-weight: bold;
-  color: #C7A04D;
-}
-
-.offcanvas .nav-link {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 10px;
-  transition: color 0.3s;
-}
-
-.offcanvas .nav-link:hover {
-  color: #C7A04D;
-}
-
-.offcanvas .btn-appointment {
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-}
+   .offcanvas-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Background color for the offcanvas */
+    height: 100%;
+    width: 100%;
+    left: 0 !important; /* Ensure it covers the full screen width */
+    right: 0 !important;
+    top: 0 !important;
+  }
+  
+  .offcanvas .offcanvas-title {
+    font-family: 'Lora-regular', serif;
+    font-weight: bold;
+    color: #C7A04D;
+  }
+  
+  .offcanvas .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .offcanvas .nav-link:hover {
+    color: #C7A04D;
+  }
+  
+  .offcanvas .btn-appointment {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
