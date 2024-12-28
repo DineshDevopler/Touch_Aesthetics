@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/about.css">
@@ -12,47 +13,82 @@
 <body>
 
   <!-----------------Navbar-started----------->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="assets/images/logo.jpg" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="#about">Home</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-appointment" href="#appointment" style=" font-family: 'Lora-regular', serif;">Book an Appointment</a>
-        </li>
-      </ul>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch_Aesthetics</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+  <!-----------------Navbar-started----------->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo" style="width: 100px; height: 30px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="assets/images/logo.png" alt="Logo" style="width: 100px; height: 30px;">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"  style=" margin-top: 4px; ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"  style=" margin-top: 4px; ">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html"  style="margin-top: 4px; ">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"  style="margin-top: 4px; ">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a id="bookAppointment" class="btn btn-appointment" href="javascript:void(0);" style="font-family: 'Lora-regular', serif; margin-top: 4px; ">
+                Book an Appointment
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <!-----------------Navbar-Ended----------->
 <!----------------main Content-Started------->
 <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/images/mainimg.png" alt="First Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg1.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg1.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg1.jpg" alt="Responsive Image">
+    </picture>
+    
     </div>
     <div class="carousel-item">
-      <img src="assets/images/mainimg2.png" alt="Second Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg2.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg2.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg2.jpg" alt="Responsive Image">
+    </picture>
     </div>
     <div class="carousel-item">
-      <img src="assets/images/mainimg3.png" alt="Third Slide">
+      <picture>
+        <source srcset="assets/images/mobileimg3.jpg" media="(max-width: 768px)">
+        <source srcset="assets/images/mainimg3.jpg" media="(min-width: 769px)">
+        <img src="assets/images/mainimg3.jpg" alt="Responsive Image">
+    </picture>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
@@ -67,7 +103,7 @@
   
 <!----------------main Content-Ended------->
 <!-- About us content started -->
- <div class="about_background">
+<div class="about_background">
 
   <div class="about-container">
     <div class="about-title">
@@ -92,71 +128,149 @@
     </div>
   </div>
  </div>
-  
-  <!-- Footer part started -->
-  <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Quick Links -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                   
-                </ul>
-                <div class="social-icons">
-                  <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <!-- Services Part 1 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Acne & Acne Scar Treatment</a></li>
-                    <li><a href="#">Anti-Aging Treatments</a></li>
-                    <li><a href="#">Pigmentation Correction</a></li>
-                    <li><a href="#">IV Glutathione for Skin Lightening</a></li>
-                    <li><a href="#">Scar treatment</a></li>
-                    <li><a href="#">Sensitive Skin Care</a></li>
-                    <li><a href="#">Chemical Peels</a></li>
-                    <li><a href="#">Microneedling</a></li>
-                </ul>
-            </div>
-            <!-- Services Part 2 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <h5>Additional Services</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Hair Loss Solutions</a></li>
-                    <li><a href="">Hair Restoration</a></li>
-                    <li><a href="">Scalp Treatments</a></li>
-                    <li><a href="">Hair Rejuvenation</a></li>
-                    <li><a href="">Laser & Aesthetic Procedure</a></li>
-                    <li><a href="">Laser Hair Removal</a></li>
-                </ul>
-            </div>
-            <!-- Map and Contact Details -->
-            <div class="col-md-3 col-sm-6 mb-4">
-                <h5>Contact Us</h5>
-                <address style="line-height:0.9;">
-                  <p>3rd Floor Kovai Tower Balasundaram Road</p>
-                  <p>PN Palayam Road,TamilNadu-641018</p>
-                  <p>Phone: +91 6380454954</p>
-                  <p>Email: <a href="mailto:Touchaestheticclinic@gmail.com">Touchaestheticclinic@gmail.com</a></p>
-              </address>
-             
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62661.21571059333!2d76.90479040145873!3d11.014150513500528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b2b386aaab%3A0x99b91addb5272176!2sKovai%20Tower!5e0!3m2!1sen!2sin!4v1734850823606!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-            </div>
+<!-----------ClientDiaries-started-------------->
+<div class="container text-center my-4">
+  <h2 class="fw-bold">Client Diaries</h2>
+
+<div class=" container card-wrapper">
+  <div class="card-container">
+      <!-- Card 1 -->
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Bella</div>
+          <div class="stars">★★★★★</div>
         </div>
-    </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+        
+      </div>
+      <!-- Card 2 -->
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Sankar</div>
+          <div class="stars">★★★★★</div>
+        </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+        
+      </div>
+      <!-- Card 3 -->
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Allen</div>
+          <div class="stars">★★★★★</div>
+        </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+       
+      </div>
+      
+      <!-- Duplicate Cards for Smooth Loop -->
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Scott</div>
+          <div class="stars">★★★★★</div>
+        </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+        
+      </div>
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Millete</div>
+          <div class="stars">★★★★★</div>
+        </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+        
+      </div>
+      <div class="client-card">
+        <img src="assets/images/clientdiariesimg.png" alt="Bella" class="client-img">
+        <div class="client-content">
+          <div class="client-name">Lisa</div>
+          <div class="stars">★★★★★</div>
+        </div>
+          <p>Google aims to protect you and your customers as well as to provide a fair environment for business owners and users.</p>
+        
+      </div>
+  </div>
+</div>
+</div>
+
+ <!-- Footer part started -->
+ <footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Quick Links -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="index.html">Contact</a></li>
+                 
+              </ul>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <!-- Services Part 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Services</h5>
+              <ul class="list-unstyled">
+                  <li><a href="service.html">Acne & Acne Scar Treatment</a></li>
+                  <li><a href="service.html">Anti-Aging Treatments</a></li>
+                  <li><a href="service.html">Pigmentation Correction</a></li>
+                  <li><a href="service.html">IV Glutathione for Skin Lightening</a></li>
+                  <li><a href="service.html">Scar treatment</a></li>
+                  <li><a href="service.html">Sensitive Skin Care</a></li>
+                  <li><a href="service.html">Chemical Peels</a></li>
+                  <li><a href="service.html">Microneedling</a></li>
+              </ul>
+          </div>
+          <!-- Services Part 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Additional Services</h5>
+              <ul class="list-unstyled">
+                  <li><a href="service.html">Hair Loss Solutions</a></li>
+                  <li><a href="service.html">Hair Restoration</a></li>
+                  <li><a href="service.html">Scalp Treatments</a></li>
+                  <li><a href="service.html">Hair Rejuvenation</a></li>
+                  <li><a href="service.html">Laser & Aesthetic Procedure</a></li>
+                  <li><a href="service.html">Laser Hair Removal</a></li>
+              </ul>
+          </div>
+          <!-- Map and Contact Details -->
+          <div class="col-md-3 col-sm-6 mb-4">
+              <h5>Contact Us</h5>
+              <address style="line-height:0.9;">
+                <p>3rd Floor Kovai Tower Balasundaram Road</p>
+                <p>PN Palayam Road,TamilNadu-641018</p>
+                <p>Phone: +91 6380454954</p>
+                <p>Email: <a href="mailto:Touchaestheticclinic@gmail.com">Touchaestheticclinic@gmail.com</a></p>
+            </address>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62661.21571059333!2d76.90479040145873!3d11.014150513500528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b2b386aaab%3A0x99b91addb5272176!2sKovai%20Tower!5e0!3m2!1sen!2sin!4v1734850823606!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+      </div>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById('bookAppointment').addEventListener('click', function () {
+    const phoneNumber = '6380454952'; 
+    const message = 'Hello❗Welcome to Touch Aesthetic Clinic 💐. What kind of service do you need?';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank'); 
+  });
+</script>
 
 
 </body>

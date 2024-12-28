@@ -10,7 +10,6 @@ body, html {
   .navbar-brand img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
   }
   .navbar-nav .nav-link {
     color: black;
@@ -56,6 +55,7 @@ body, html {
   {
     text-align: center;
 padding-top: 13px;
+padding-top: 13px;
      font-family: 'Lora-regular', serif;
      font-weight: bold;
      color:#F0C886;
@@ -90,8 +90,8 @@ padding-top: 13px;
     width: 290px;
     height: 300px;
     object-fit: cover;
-    /* width: 250px; */
-/* margin-left:150px; */
+    width: 250px; 
+ margin-left:150px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -131,6 +131,7 @@ padding-top: 13px;
 /* Footer part started */
 .footer {
   background-image:linear-gradient(#C7A04D,#CEA95A,#CEA95A,#CEA95A,#CEA95A,#DCBC78,#D9B973,#D0AC60) ;
+  background-image:linear-gradient(#C7A04D,#CEA95A,#CEA95A,#CEA95A,#CEA95A,#DCBC78,#D9B973,#D0AC60) ;
   color:black;
   padding: 40px 0;
   margin-top:40px;
@@ -146,12 +147,14 @@ padding-top: 13px;
   text-decoration: none;
   font-family: 'Lora-regular', serif;
   font-size:17px;
+  font-size:17px;
 }
 .footer a:hover {
   color: black;
   text-decoration: underline;
 
 }
+.footer address{
 .footer address{
   font-family: 'Lora-regular', serif;
   color: black;
@@ -160,7 +163,22 @@ padding-top: 13px;
 .footer iframe {
   border: 0;
   width: 100%;
+  width: 100%;
   height:150px;
+  margin-top: 12px;
+}
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #060202;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color:rgb(55, 18, 18);
   margin-top: 12px;
 }
 .social-icons {
@@ -178,6 +196,7 @@ padding-top: 13px;
 }
 
 
+
   /* Responsive Design */
   @media screen and (max-width: 768px) {
     .about-container .container {
@@ -187,6 +206,7 @@ padding-top: 13px;
     
     .image-column img {
       margin-bottom: 10px;
+      margin-left:50px;
       margin-left:50px;
     }
   
@@ -211,5 +231,163 @@ padding-top: 13px;
    
     font-size: 15px;
   }
+    }
+    .footer iframe
+  {
+
+    width: 80%;
+    margin-top: 10px;
+  }
+  .footer h5 {
+  font-size: 20px;
+  }
+  .footer a {
+    
+    font-size:15px;
+  }
+  .footer address{
+   
+    font-size: 15px;
+  }
+  }
+  
+
+  /* Why chooseus-Ended */
+
+/* CLientDiaries-started */
+ /* Card Container */
+ .card-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  animation: slideCards 10s linear infinite;
+}
+
+.client-card {
+  position: relative; /* Ensures proper positioning of content */
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px; /* Adjust card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wraps content around the image */
+  align-items: flex-start; /* Aligns image to the top */
+}
+
+.client-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 35px; /* Space between image and content */
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.client-content {
+  flex: 1; /* Ensures the content takes the remaining space */
+  text-align: left;
+}
+
+.client-name {
+  font-size: 28px;
+  font-weight: bold;
+  color:#F0C886;
+  margin-bottom: 0px;
+}
+
+.stars {
+  color:#F0C886;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.client-card p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Animation Keyframes */
+@keyframes slideCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * 3)); /* Adjust for visible card width */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .client-card {
+    width: 100%;
+    flex-direction: column; /* Stack image and content vertically */
+  }
+
+  .client-img {
+    margin: 0 auto 10px;
+  }
+
+  .client-content {
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-item img {
+    height: 100%; /* Adjust height to 60% of the viewport for smaller screens */
+  }
+}
+
+/* Media Query for screens below 576px (extra small devices) */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 100%; /* Further reduce the height for extra small devices */
+  }
+}
+
+  
+    /* nev  */
+   /* Center-align offcanvas content */
+   .offcanvas-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Background color for the offcanvas */
+    height: 100%;
+    width: 100%;
+    left: 0 !important; /* Ensure it covers the full screen width */
+    right: 0 !important;
+    top: 0 !important;
+  }
+  
+  .offcanvas .offcanvas-title {
+    font-family: 'Lora-regular', serif;
+    font-weight: bold;
+    color: #C7A04D;
+  }
+  
+  .offcanvas .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .offcanvas .nav-link:hover {
+    color: #C7A04D;
+  }
+  
+  .offcanvas .btn-appointment {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
   }
   
