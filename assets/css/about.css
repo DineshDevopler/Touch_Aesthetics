@@ -227,6 +227,7 @@ padding-top: 13px;
   display: flex;
   gap: 20px;
   animation: slideCards 10s linear infinite;
+  padding-bottom:10px ;
 }
 
 .client-card {
