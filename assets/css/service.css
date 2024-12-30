@@ -4,6 +4,9 @@ body, html {
   box-sizing: border-box;
   height: 100%;
   font-family: 'Lora-regular', serif;
+  
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 /* Navbar-Started */
 .navbar {
@@ -19,7 +22,7 @@ body, html {
     transition: color 0.3s;
   }
   .navbar-nav .nav-link:hover {
-    color: #555;
+
     text-decoration: underline;
 
   }
@@ -32,7 +35,7 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
   }
   .btn-appointment:hover {
-    background-color: #555;
+    background-color: #0f0e0e;
     color: white;
     text-decoration: underline;
   }
@@ -60,91 +63,106 @@ body, html {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 60px #ff9900;
     }
   }
-.service-title
-{
-  margin: 19px;
-  text-align: center;
-  animation: bounce 1s infinite;
-  color: #0b0707;
-  /* text-align: center; */
-  /* animation: glow 2s infinite; */
-}
-.services-section {
-  display: flex;
-  flex-wrap: wrap;
- margin: 12px;
-  justify-content: center;
-  align-items: center;
-  gap:5px;
- 
-}
 
-.service-container {
-  display: flex;
-
-  width: 90%;
-  max-width: 1200px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: black;
-}
-
-.service-image {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-.service-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transform: scale(1);
-  transition: transform 0.5s ease;
-}
-
-.service-image:hover img {
-  transform: scale(1.1);
-}
-
-.service-content {
-  flex: 2;
-  padding:30px;
-}
-
-.service-content h2 {
-  font-size: 24px;
-  color:#F0C886;
-  margin-bottom: 15px;
-}
-
-.service-content p {
-  font-size: 16px;
-  color:white;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .service-container {
-    flex-direction: column;
+/* service section started */
+    /* Keyframe for fading in and sliding */
+    @keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          transform: translateY(30px); /* Start below */
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
   }
 
-  .service-image,
+  @keyframes slideIn {
+      0% {
+          opacity: 0;
+          transform: translateX(100px); /* Slide from the right */
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  /* Animation for images and content */
+  .service-image, .service-content {
+      opacity: 0; /* Start hidden */
+      animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .service-image {
+      animation: fadeInUp 1s ease-out forwards, slideIn 1s 0.5s forwards; /* Slide-in effect for images */
+  }
+
   .service-content {
-    width: 100%;
+      animation-delay: 0.5s; /* Delay content animation */
   }
 
+  /* Hover effect for images */
   .service-image img {
-    height: 250px;
-    object-fit: cover;
+      transition: transform 0.3s ease;
   }
+
+  .service-image img:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+  }
+
+  .container {
+    max-width: 1140px;
 }
 
+.content-box {
+    background: #0b0b0b;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* margin-top: 10px; */
+    font-family: 'Lora-regular', serif;
+}
+.img-fluid
+{
+    margin-left: 83px;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content-box h2{
+    color: #F0C886;
+}
+.content-box p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Lora-regular', serif;
+}
+@media screen and (max-width: 768px) {
+    .content-box 
+    {
+        margin-top: 13px;
+    }
+    .img-fluid{
+        margin-left: 0px;
+    }
+}
+  
+
+  /* Make sure the layout stacks correctly on mobile */
+  @media (max-width: 767px) {
+      .service-image, .service-content {
+          opacity: 1 !important;
+          transform: translateY(0) !important; /* Ensure they are fully visible */
+      }
+  }
 /* Footer part started */
 .footer {
   background-image:linear-gradient(#C7A04D,#EBD197,#CEA95A,#E1C381,#E2C585,#DCBC78,#D9B973,#D0AC60) ;
